@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+::selection{
+    background-color: #95d246;
+    color: white;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.wrapper nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+nav.logo{
+    width: 70px;
+}
+nav.logo img{
+    width: 100%;
+}
+nav button{
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: #95d246;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+main{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_text{
+    text-transform: uppercase;
+    width: 50%;
+}
+.main_text h1{
+    font-size: 4em;
+}
+.main_text h3{
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
+.main_text button{
+    background-color: #95d246;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+}
+.main_text .main_text-footer{
+    display: flex;
+    margin-top: 80px;
+}
+.main_text .main_text-footer h4{
+    color: #686767;
+    font-size: 1em;
+}
+.main_text .main_text-footer p{
+    margin-top: 10px;
+    color: #8d8c8c;
+    font-weight: 500;
+}
+.main_text .main_text-footer div:nth-child(1){
+    margin-right: 50px;
+}
+.main .main_img{
+    width: 600px;
+}
+/* responsivo */
+@media (max-width:800px){
+    main{
+        flex-direction: column;
+    }
+    main .main_img,
+    main .main_text{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+@media (max-width:500px) {
+    .main_text .main_text-footer{
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .main_text .main_text-footer div{
+        margin: 15px 0 !important;
+}
+ }
+@media (max-width:400px){
+    .main_text h1{
+        font-size: 3.5em;
+    }
+    .main_text h3{
+        font-size: 1em;
+    }
+}
+@media (max-width:300px){
+    
+}
